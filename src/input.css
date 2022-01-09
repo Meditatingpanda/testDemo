@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components{
+    .btnStyle{
+        @apply border-red-500 border-2
+            w-1/6
+            h-6
+            rounded
+            flex
+            justify-center
+            bg-red-500
+            items-center
+            text-lg text-white
+            cursor-pointer
+            hover:scale-110
+            ease-linear
+            delay-75
+    }
+    .inputStyle{
+        @apply border-gray-300 border-2
+            w-3/4
+            rounded
+            mt-2
+            focus:outline-none
+            pl-2
+            mr-3
+            ml-3
+    }
+  
+}

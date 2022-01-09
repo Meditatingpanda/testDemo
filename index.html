@@ -15,47 +15,20 @@
   </head>
   <body>
     <!-- Lets create a to-do List-->
-    <div class="cotainer  w-9/12 mx-auto max-w-lg shadow-lg p-6">
-      <div class=" h-12 flex items-baseline max-w-md mx-auto mb-3">
-        <input
-          type="text"
-          class="
-            border-gray-600
-             border-2
-            w-3/4
-            shadow-lg
-            rounded
-            mt-2
-            focus:outline-none
-            pl-2
-            mr-3
-            ml-3
-          "
-        />
-        <div
-          class="
-            btn
-            border-red-500 border-2
-            w-1/6
-            h-6
-            rounded
-            flex
-            justify-center
-            bg-red-500
-            items-center
-            text-lg text-white
-            cursor-pointer
-          "
-        >
-          ADD
-        </div>
+    <div class="cotainer w-9/12 mx-auto max-w-lg shadow-lg p-6  min-h-screen ">
+      <div class="flex justify-center text-2xl  text-red-600 mb-3">
+        <i class="fas fa-clipboard-list mr-2"></i>
+        <h3 >My toDo App</h3>
       </div>
-      <div class="displayBox">
-           <ul class="list cursor-pointer">
-             <li class="shadow-lg pl-3 mb-3">i love math</li>
-             <li class="shadow-lg pl-3 mb-3">Do yo have any problem</li>
-             <li class="shadow-lg pl-3 mb-3"> fuck off</li>
-           </ul>
+       
+      <div class="h-12 flex items-baseline max-w-md mx-auto mb-3 ">
+        <input type="text" class="inputStyle" />
+        <div class="btn btnStyle">ADD</div>
+      </div>
+      <div class="displayBox ">
+        <ul class="list cursor-pointer">
+          <!-- <li class="shadow-sm pl-3 mb-3 hover:shadow-md ">hey you</li> -->
+        </ul>
       </div>
     </div>
 

@@ -2,22 +2,31 @@ let input=document.querySelector('input');
 let btn=document.querySelector('.btn');
 let ul=document.querySelector('ul');
 let ulList=document.querySelectorAll('li');
-let temp=null;
-//ulList=Array.from(ulList);
 
-let list=document.createElement('li');
-list.classList.add('shadow-lg','pl-3','mb-3');
+input.addEventListener('keyup',(e)=>{
+   if(e.keyCode==13){
+     btn.click();
+   }
+})
 
 btn.addEventListener('click',()=>{
-    temp=input.value;
-    list.innerText=temp;
-    ul.appendChild(list);
-    input.value='';
+//  ul.innerHTML+=`<li class=" listStyle">${input.value}</li>`;
+//  input.value='';
+ let li =document.createElement('li');
+ li.innerText='* '+input.value;
+ input.value='';
+ li.setAttribute('class','shadow-sm pl-3 mb-3 hover:shadow-md ');
+ ul.append(li);
 })
-ulList.forEach(key=>{
-  key.addEventListener('click',(e)=>{
-   e.target.style.textDecoration='line-through';
 
-  })
+// ulList.forEach(key=>{
+//   key.addEventListener('click',(e)=>{
+//    e.target.remove();
 
+//   })
+// })
+ul.addEventListener('click',(e)=>{
+  console.log(e.target.tagName);
+  if(e.target.tagName=="LI")
+e.target.remove();
 })
