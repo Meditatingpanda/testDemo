@@ -3,22 +3,24 @@
 @tailwind utilities;
 @layer components{
     .btnStyle{
-        @apply border-red-500 border-2
+        @apply 
             w-1/6
-            h-6
+            h-7
             rounded
             flex
             justify-center
+            text-black
             bg-red-500
+            hover:bg-black
+            hover:text-red-500
             items-center
-            text-lg text-white
+            text-lg 
             cursor-pointer
-            hover:scale-110
-            ease-linear
+             ease-in
             delay-75
     }
     .inputStyle{
-        @apply border-gray-700 border-2
+        @apply border-gray-700 border-[1px]
             w-3/4
             rounded
             mt-2
